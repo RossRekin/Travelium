@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bglocation"
+    tools:context=".LocationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/top_bg"
+        android:padding="40dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/top_arrow"/>
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/top_menu"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8a070707"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:id="@+id/ratingImageView"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:src="@drawable/rating"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/locationHeadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Santorini\nGreece"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/locationDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A stunning island tinted every shade \nof the artist's palette at sunset"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginLeft="40dp"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:rowCount="1"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_1" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_2" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_3" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/img_4" />
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/bookButton"
+                android:layout_width="240dp"
+                android:layout_height="52dp"
+                android:background="@drawable/filled_button"
+                android:text="Book Destination"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="40dp"/>
+
+
+
+            <Button
+                android:id="@+id/nextbgButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/arrow_bg"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"/>
+
+            <Button
+                android:id="@+id/nextarrowButton"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bottom_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="55dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
